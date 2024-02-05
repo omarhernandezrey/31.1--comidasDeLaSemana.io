@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan de Comidas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Plan de Comidas Semanal</h2>
+
+<form id="mealForm">
+    <label for="day">Día:</label>
+    <select id="day">
+        <option value="lunes">Lunes</option>
+        <option value="martes">Martes</option>
+        <option value="miércoles">Miércoles</option>
+        <option value="jueves">Jueves</option>
+        <option value="viernes">Viernes</option>
+    </select><br><br>
+    
+    <label for="date">Fecha:</label>
+    <input type="date" id="date"><br><br>
+    
+    <label for="breakfast">Desayuno:</label>
+    <input type="text" id="breakfast"><br><br>
+    
+    <label for="snack">Media Mañana:</label>
+    <input type="text" id="snack"><br><br>
+    
+    <label for="lunch">Almuerzo:</label>
+    <input type="text" id="lunch"><br><br>
+    
+    <label for="dinner">Cena:</label>
+    <input type="text" id="dinner"><br><br>
+    
+    <button type="button" onclick="addMeal()">Agregar Comida</button>
+</form>
+
+<table id="mealTable">
+    <thead>
+        <tr>
+            <th>Día</th>
+            <th>Fecha</th>
+            <th>Desayuno</th>
+            <th>Media Mañana</th>
+            <th>Almuerzo</th>
+            <th>Cena</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Filas de datos se agregarán aquí -->
+    </tbody>
+</table>
+
+<script src="main.js"></script>
+
+</body>
+</html>
